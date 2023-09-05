@@ -1,0 +1,77 @@
+.Carousell{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 590px) {
+    /* Styles for screens with a maximum width of 768px */
+    .Carousell {
+        height: 400px; /* Adjust the height for smaller screens */
+    }
+}
+@media (max-width: 450px) {
+    /* Styles for screens with a maximum width of 768px */
+    .Carousell {
+        height: 350px; /* Adjust the height for smaller screens */
+    }
+}
+@media (max-width: 410px) {
+    /* Styles for screens with a maximum width of 768px */
+    .Carousell {
+        height: 320px; /* Adjust the height for smaller screens */
+    }
+}
+@media (max-width: 350px) {
+    /* Styles for screens with a maximum width of 768px */
+    .Carousell {
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;}
+
+    .carousel-slider{
+        height: 80%;
+}
+
+    .carousel-slider  .slide.selected img{
+        object-fit: cover;
+        height: 70%;
+        width: 100%;}
+
+
+        .thumbs.animated{display: none;}
+        
+.control-next, .control-prev{display: none;}
+
+.imgcont{display: flex;
+justify-content: center;
+align-items: center;
+
+
+position: absolute;}
+
+.imgcont p {color: rgba(117, 66, 25, 0.9);
+font-family: cursive;
+font-size:xx-large;
+font-weight:900;
+margin-bottom: 20%;
+}
+
+@media(390px<=width<=645px){
+
+    .imgcont p{font-size:large;}
+}
+@media(width<=390px){
+
+    .imgcont p{font-size:medium;}
+}
+@media(width<=315px){
+
+    .imgcont p{font-size:small;}
+}

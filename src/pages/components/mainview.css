@@ -1,0 +1,28 @@
+.mainviewimg{width: 60%;
+height: 250px;
+}
+.mainview img{height: 25%;
+width: 25%;}
+
+.mainview{
+    display: flex;
+justify-content:space-around;
+align-items: center;
+width: 100%;
+margin-top: 10px;
+}
+
+p{color: black;
+width: 50%;
+}
+.text-justify{
+    width: auto;
+  }
+
+h2{color: black;}
+
+@media (max-width:500px){
+  .mainview img{display: none;}
+  .mainview > p{width: 100%;}
+
+}

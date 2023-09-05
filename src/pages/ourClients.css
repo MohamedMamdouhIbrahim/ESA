@@ -1,0 +1,113 @@
+.stats-1{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+    }
+    @media (max-width:550px) {
+        .stats-1{display: flex;
+            flex-direction: column;
+
+}
+.buttonsholder{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+        
+    }
+    
+    #uls{
+
+        list-style-type: none;
+        margin-right: 100px;
+        color: black;
+    }
+    .Kansas{color:black ;}
+    .Kansas::before{content: "\2022";
+        color: #032f60;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;}
+    
+    .Oklahoma{color:black ;}
+    .Oklahoma::before{
+        content: "\2022";
+            color: #176dae;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+    }
+    .Memphis{color:black ;}
+    .Memphis::before{
+        content: "\2022";
+            color: #cccccc;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+    }
+    .DFW{color:black ;}
+    .DFW::before{
+        content: "\2022";
+            color: #dd6e6e;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+    }
+    
+    .Washington{color:black ;}
+    .Washington::before{
+        content: "\2022";
+            color: #cc0000;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+    }
+    
+    .Sacramento{color:black ;}
+    .Sacramento::before{
+        content: "\2022";
+            color: #80b3c0;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+    }
+
+    .stats h2{margin: 5px auto;
+        text-align: center;
+    }
+    .stats{background-color: #FAF9F6;
+    margin-bottom: 50px;
+margin-top: 20px;}
+#uls li span{color: black;}
+select{color: black;}
+select option{color: black;}
+
+.smallCard{
+    display:flex;
+    background-color:  #485D58;
+    /*color is inline*/
+    justify-content:center ;
+    padding-top: 20px;
+}
+    
+    
+
+.buttonsholder{ background-color: #485D58;
+display: flex;
+justify-content: space-around;
+overflow: scroll;}
+
+.buttonsholder button{background-color: transparent;
+color: white;
+border: 1px solid white;
+margin-top: 4px;
+margin-bottom: 4px;
+border-radius: 10px;}

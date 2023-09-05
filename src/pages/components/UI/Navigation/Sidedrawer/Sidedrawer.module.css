@@ -1,0 +1,22 @@
+.Sidedrawer{max-width: 70%;
+width: 45%;
+background-color: aliceblue;
+height: 100%;
+position: fixed;
+z-index: 3000;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+background-color: #485d58;}
+.Sidedrawer a{margin-bottom: 8%;
+color: white;}
+
+.Sidedrawer svg{top: 0; margin: 3%;}
+
+@media(min-width:500px){
+    .Sidedrawer{display: none;}
+}
+
+
+
