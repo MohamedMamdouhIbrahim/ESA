@@ -7,7 +7,7 @@ import img3_carousel from '../../../assets/carousel/img3_carousel.png';
 
 const carousel = ()=>{
 
-    return(<Carousel className="Carousell"  infiniteLoop={true} autoFocus={true} autoPlay={true} interval={100000}>
+    return(<Carousel className="Carousell"  infiniteLoop={true} autoFocus={true} autoPlay={true} interval={3000}>
                 <div className="imgcont" style={{background:`url(${img1_carousel})`,backgroundSize:'contain',backgroundRepeat:'no-repeat',height:'70%',width:'100%'}} alt="img"><p>Don't worry about outrageous overhead, just top-notch service that won't break the bank!</p></div>
 
 

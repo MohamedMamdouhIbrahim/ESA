@@ -1,6 +1,7 @@
 import './ourClients.css'
 import { useState } from 'react';
-import {PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Pie } from 'react-chartjs-2';
 import Modal from './components/UI/Modal/modal';
 
 const OurClient = ()=>{
@@ -16,24 +17,39 @@ const OurClient = ()=>{
         { name: 'Sacramento, CA', value: 1 },
 
       ];
+      ChartJS.register(ArcElement, Tooltip, Legend);
+      const datat = {labels:['Kansas','Oklahoma City','Memphis, TN','DFW, tx','Washington','Sacramento, CA'],
+      datasets: [
+        {
+          label: '# ofClients',
+          data: [1, 3, 1, 4, 1, 1],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)',
+          ],
+          borderWidth: 1,
+        },
+      ],};
+
 const handleChange = (e)=>{let selectedState = e.target.value
     setState(selectedState)
   modalState(!modal)}
   const backdrophandler = ()=>{modalState(false)}
 
-      const COLORS = ['#032f60', '#176dae', '#cccccc', '#dd6e6e','#cc0000','#80b3c0'];
-      const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+      
 
-  return (
-    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-      {`${(percent * 100).toFixed(0)}%`}
-    </text>
-  );
-};
 const stateInfo = {Kansas:{Total_number_of_clients: 1,Clients_working_now: 1,Deals_Closed: 14},
                    Oklahoma:{Total_number_of_clients: 1,Clients_working_now: 1,Deals_Closed:104},
                    Memphis:{Total_number_of_clients: 3,Clients_working_now: 0,Deals_Closed: 6},
@@ -54,24 +70,7 @@ return(
         <div className='stats'>
             <h2 style={{color:'black'}}>The percentage of our clients in each state.</h2>
         <div className='stats-1'>
-        <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={240} height={240}>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            labelLine={false}
-            label={renderCustomizedLabel}
-            outerRadius={120}
-            fill="#8884d8"
-            dataKey="value"
-          >
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-        </PieChart>
-      </ResponsiveContainer>
+       <Pie data={datat}/>
       <ul id='uls'>
         <li className='Kansas'><span>Kansas</span></li>
         <li className='Oklahoma'><span>Oklahoma</span></li>
