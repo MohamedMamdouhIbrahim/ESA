@@ -8,12 +8,12 @@ import img3_carousel from '../../../assets/carousel/img3_carousel.png';
 const carousel = ()=>{
 
     return(<Carousel className="Carousell"  infiniteLoop={true} autoFocus={true} autoPlay={true} interval={100000}>
-                <div className="imgcont" style={{background:`url(${img1_carousel})`,backgroundSize:'contain',backgroundRepeat:'no-repeat',height:'70%',width:'100%'}} alt="img"><p>"Elevate Your Journey: Discover Lucrative Partnerships in Real Estate with Us."</p></div>
+                <div className="imgcont" style={{background:`url(${img1_carousel})`,backgroundSize:'contain',backgroundRepeat:'no-repeat',height:'70%',width:'100%'}} alt="img"><p>Don't worry about outrageous overhead, just top-notch service that won't break the bank!</p></div>
 
 
        
                 <div className="imgcont" style={{background:`url(${img2_carousel})`,backgroundSize:'contain',backgroundRepeat:'no-repeat',height:'70%',width:'100%'}} alt="img"><p>
-"Your Pathway to Prosperity: Join Us for LucrativeLucrative Real Estate Partnerships."</p></div>
+                Start working with a team of proffessionals solely dedicated to your success, from lead creation to deal closing!</p></div>
 
 
       <img src={img3_carousel} alt="img"/>

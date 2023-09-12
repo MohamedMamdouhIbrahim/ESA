@@ -8,11 +8,16 @@ display: flex;
 flex-direction: column;
 
 align-items: center;
-background-color: #485d58;}
+background-color: #485d58;
+transition: transform 0.3s linear;}
+
 .Sidedrawer a{margin-bottom: 8%;
 color: white;}
 
 .Sidedrawer svg{top: 0; margin: 3%;}
+
+.Open{transform:translateX(0)}
+.Closed{transform: translateX(-200%);}
 
 @media(min-width:500px){
     .Sidedrawer{display: none;}

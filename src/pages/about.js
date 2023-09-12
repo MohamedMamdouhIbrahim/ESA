@@ -4,11 +4,11 @@ import './about.module.css'
 import classes from './about.module.css'
 import Slider from "./components/Slider"
 import Mainview from "./components/mainview"
-import coldcaller from '../assets/cold-caller-removebg-preview.png'
-import qualityagentimg from '../assets/qualityagent-removebg-preview.png'
-import trainerimg from '../assets/trainer.jpeg'
+import coldcaller from '../assets/Cold-Happy-Calling-nobg (1).png'
+import qualityagentimg from '../assets/qualitypic (1).png'
+import trainerimg from '../assets/trainercnopg (1).png'
 import followupimg from '../assets/followup-removebg-preview.png'
-import bob from '../assets/img1.jpeg'
+import acman from '../assets/property-manager-2-1024x479 (1) (1).png'
 const about = ()=>{
     const calledcallerp = `The Bedrock of Real Estate Success!
     Our Cold Callers are the architects of opportunity, shaping connections with finesse (like your next door neighbor) and transforming your leads into gold. 
@@ -40,7 +40,7 @@ const about = ()=>{
     <br/>
     <Mainview title={'Lead Managers/follow up sprecialists'} parag={leadmg} imgPath={followupimg}/>
     <br/>
-    <Mainview title={"Acquisition manager"} parag={am} imgPath={bob} color={"#485d58"}/>
+    <Mainview title={"Acquisition manager"} parag={am} imgPath={acman} color={"#485d58"}/>
 
    <div className="scontainer">
     <p><h2 style={{color:'white'}}>Our team members</h2></p>

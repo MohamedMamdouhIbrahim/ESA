@@ -12,7 +12,7 @@ export default function rootLayout(){
 
         <div className="root-layout">
         <Toolbar/>
-        <Sidedrawer/>
+        
         <div className={classes.Outlet}>
         <main>
           <Outlet />

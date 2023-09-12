@@ -24,5 +24,6 @@ h2{color: black;}
 @media (max-width:500px){
   .mainview img{display: none;}
   .mainview > p{width: 100%;}
+  .mainview{ padding: 5%;}
 
 }
